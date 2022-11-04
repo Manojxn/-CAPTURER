@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRJ | My Site</title>
+   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/F1.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="user hide-details" id="userBox">
+    <img src="images\MRJ.png" onclick="openinfo()">
+    <div class="info">
+        <h1>Manoj Raj</h1>
+					<p>B.E student, Second Year CSE at <span><a href="https://www.mycem.edu.in/" target="_blank">MyCEM  </a></span></p>
+					<p>From: Mysuru, Karnataka, India</p>
+					
+					<a class="a1" href="https://t.me/username/Leo_Man0" target="_blank"> connect with me</a>
+    </div>
+    <div class="close-icon" onclick="closeinfo()"></div>
+</div>
+
+<script>
+
+let userBox = document.getElementById("userBox");
+
+
+function openinfo(){
+    userBox.classList.remove("hide-details");
+}
+function closeinfo(){
+    userBox.classList.add("hide-details");
+}
+
+</script>
+
+</body>
+</html>
